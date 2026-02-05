@@ -6,12 +6,35 @@ import Image from "next/image";
 export default function Hero() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail("");
+    if (!email) return;
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setSubmitted(true);
+        setEmail("");
+      } else {
+        setError(data.error || "Une erreur est survenue. Veuillez réessayer.");
+      }
+    } catch {
+      setError("Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -58,11 +81,15 @@ export default function Hero() {
                   />
                   <button
                     type="submit"
-                    className="rounded-lg bg-orange-brand px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-brand-hover"
+                    disabled={loading}
+                    className="rounded-lg bg-orange-brand px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-brand-hover disabled:opacity-50"
                   >
-                    Télécharger
+                    {loading ? "..." : "Télécharger"}
                   </button>
                 </form>
+                {error && (
+                  <p className="mt-3 text-sm text-red-400">{error}</p>
+                )}
               </>
             )}
           </div>
