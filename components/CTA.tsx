@@ -18,11 +18,12 @@ export default function CTA() {
     <section id="cta" className="bg-blue-dark px-6 py-24">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-          Recevez notre guide <span className="text-orange-brand">gratuit</span>
+          Recevez mon guide <span className="text-orange-brand">gratuit</span>
         </h2>
         <p className="mt-4 text-gray-300">
-          Découvrez les 5 leviers essentiels pour accélérer la croissance de
-          votre PME. Un guide actionnable, rédigé par nos consultants experts.
+          Comment mobiliser l&apos;intelligence collective de votre équipe pour
+          résoudre des problèmes complexes — un guide actionnable tiré de
+          25&nbsp;ans de pratique en facilitation et en leadership.
         </p>
 
         <div className="mt-10">
