@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-blue-dark px-6 py-8">
@@ -6,15 +8,24 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Kodra Conseil. Tous droits réservés.
         </p>
         <div className="flex gap-6 text-sm text-gray-500">
-          <a href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/mentions-legales"
+            className="transition-colors hover:text-gray-300"
+          >
             Mentions légales
-          </a>
-          <a href="#" className="transition-colors hover:text-gray-300">
+          </Link>
+          <Link
+            href="/confidentialite"
+            className="transition-colors hover:text-gray-300"
+          >
             Politique de confidentialité
-          </a>
-          <a href="#" className="transition-colors hover:text-gray-300">
+          </Link>
+          <Link
+            href="/contact"
+            className="transition-colors hover:text-gray-300"
+          >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
