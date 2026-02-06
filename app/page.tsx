@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import BlueprintBg from "@/components/BlueprintBg";
 
 const projects = [
   {
@@ -43,23 +44,47 @@ const statusConfig = {
 
 export default function Labo() {
   return (
-    <div className="min-h-screen bg-blue-dark">
+    <div className="relative min-h-screen bg-blue-dark">
+      <BlueprintBg />
       {/* Header */}
       <header className="border-b border-white/5 px-6 py-6">
         <div className="mx-auto max-w-5xl">
-          <div className="flex items-center gap-4">
-            <Image
-              src="/logo.png"
-              alt="Kodra Conseil"
-              width={120}
-              height={40}
-              className="h-7 w-auto opacity-70"
-              priority
-            />
-            <div className="h-6 w-px bg-white/10" />
-            <span className="font-mono text-sm tracking-wide text-gray-500">
-              labo
-            </span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/logo.png"
+                alt="Kodra Conseil"
+                width={120}
+                height={40}
+                className="h-7 w-auto opacity-70"
+                priority
+              />
+              <div className="h-6 w-px bg-white/10" />
+              <span className="font-mono text-sm tracking-wide text-gray-500">
+                labo
+              </span>
+            </div>
+            <a
+              href="https://www.kodra.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 font-mono text-xs text-gray-500 transition-colors hover:text-orange-brand"
+            >
+              kodra.ca
+              <svg
+                className="h-3 w-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </header>
@@ -172,16 +197,27 @@ export default function Labo() {
 
       {/* Footer */}
       <footer className="mt-auto border-t border-white/5 px-6 py-6">
-        <div className="mx-auto flex max-w-5xl items-center justify-between">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 sm:flex-row">
           <p className="font-mono text-xs text-gray-600">
             &copy; {new Date().getFullYear()} Kodra Conseil, SENC
           </p>
-          <a
-            href="mailto:seb@kodra.ca"
-            className="font-mono text-xs text-gray-600 transition-colors hover:text-orange-brand"
-          >
-            seb@kodra.ca
-          </a>
+          <div className="flex items-center gap-4 font-mono text-xs text-gray-600">
+            <a
+              href="https://www.kodra.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-orange-brand"
+            >
+              www.kodra.ca
+            </a>
+            <span className="text-white/10">|</span>
+            <a
+              href="mailto:seb@kodra.ca"
+              className="transition-colors hover:text-orange-brand"
+            >
+              seb@kodra.ca
+            </a>
+          </div>
         </div>
       </footer>
     </div>
