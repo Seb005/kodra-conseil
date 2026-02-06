@@ -27,7 +27,7 @@ export async function POST(request: Request) {
       const body: Record<string, unknown> = {
         email,
         firstName: name,
-        source: "kodraconseil.com - formulaire contact",
+        source: "kodra.ca - formulaire contact",
         userGroup: "contact",
       };
 

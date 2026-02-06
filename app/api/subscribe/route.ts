@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     const body: Record<string, unknown> = {
       email,
-      source: "kodraconseil.com",
+      source: "kodra.ca",
     };
 
     const mailingListId = process.env.LOOPS_MAILING_LIST_ID;

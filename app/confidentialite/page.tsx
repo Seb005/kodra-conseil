@@ -24,7 +24,7 @@ export default function PolitiqueConfidentialite() {
               Kodra Conseil, SENC (&laquo;&nbsp;nous&nbsp;&raquo;,
               &laquo;&nbsp;notre&nbsp;&raquo;) s&apos;engage à protéger les
               renseignements personnels des visiteurs de son site web
-              kodraconseil.com. La présente politique explique quels
+              kodra.ca. La présente politique explique quels
               renseignements nous recueillons, pourquoi nous les recueillons et
               comment nous les utilisons.
             </p>

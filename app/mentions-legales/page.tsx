@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mentions légales — Kodra Conseil",
   description:
-    "Mentions légales du site kodraconseil.com — Kodra Conseil, SENC.",
+    "Mentions légales du site kodra.ca — Kodra Conseil, SENC.",
 };
 
 export default function MentionsLegales() {
@@ -26,7 +26,7 @@ export default function MentionsLegales() {
             <p className="mb-2">
               Le site{" "}
               <span className="font-medium text-blue-dark">
-                kodraconseil.com
+                kodra.ca
               </span>{" "}
               est édité par :
             </p>
@@ -97,7 +97,7 @@ export default function MentionsLegales() {
               Propriété intellectuelle
             </h2>
             <p className="mb-3">
-              L&apos;ensemble des contenus présents sur le site kodraconseil.com
+              L&apos;ensemble des contenus présents sur le site kodra.ca
               — textes, images, graphismes, logos, icônes, vidéos et leur mise
               en forme — sont la propriété exclusive de Kodra Conseil, SENC ou
               de ses partenaires, sauf mention contraire.

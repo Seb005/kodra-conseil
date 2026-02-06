@@ -47,7 +47,7 @@ export default function GuidePage() {
             Seb Bélisle — Kodra Conseil
           </p>
           <p className="text-gray-500 text-xs mt-2">
-            kodraconseil.com
+            kodra.ca
           </p>
         </div>
       </section>
@@ -797,9 +797,9 @@ export default function GuidePage() {
           </p>
           <p className="text-gray-400 mb-1">Kodra Conseil</p>
           <p className="text-orange-brand font-medium mb-1">
-            seb@kodraconseil.com
+            seb@kodra.ca
           </p>
-          <p className="text-gray-400 text-sm">kodraconseil.com</p>
+          <p className="text-gray-400 text-sm">kodra.ca</p>
         </div>
 
         <p className="text-gray-400 text-xs text-center mt-12">
