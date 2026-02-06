@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kodra Conseil — Accélérez la croissance de votre entreprise",
+  title: "Labo — Kodra Conseil",
   description:
-    "Kodra Conseil accompagne les dirigeants pour transformer leur vision en résultats concrets. Stratégie, transformation digitale, performance opérationnelle.",
+    "Le laboratoire de Kodra Conseil. Projets web, prototypes et expérimentations.",
 };
 
 export default function RootLayout({
