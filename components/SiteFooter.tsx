@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import EasterEgg from "./EasterEgg";
 
 export default function SiteFooter() {
   return (
@@ -115,8 +116,9 @@ export default function SiteFooter() {
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
-          <p className="text-xs text-gray-600">
+          <p className="flex items-center text-xs text-gray-600">
             &copy; {new Date().getFullYear()} Kodra Conseil s.e.n.c. Tous droits réservés.
+            <EasterEgg />
           </p>
           <div className="flex gap-6 text-xs text-gray-600">
             <Link href="/mentions-legales" className="transition-colors hover:text-gray-400">
