@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteNavbar from "@/components/SiteNavbar";
+import SiteFooter from "@/components/SiteFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function PolitiqueConfidentialite() {
   return (
     <>
-      <Navbar />
-      <main className="bg-white px-6 py-24">
-        <article className="mx-auto max-w-3xl text-gray-700 leading-relaxed">
-          <h1 className="mb-12 text-3xl font-bold text-blue-dark sm:text-4xl">
+      <SiteNavbar />
+      <main className="bg-blue-dark-light px-6 py-24">
+        <article className="mx-auto max-w-3xl text-gray-300 leading-relaxed">
+          <h1 className="mb-12 text-3xl font-bold text-white sm:text-4xl">
             Politique de confidentialité
           </h1>
 
@@ -30,12 +30,12 @@ export default function PolitiqueConfidentialite() {
             </p>
             <p>
               Cette politique est conforme à la{" "}
-              <span className="font-medium text-blue-dark">
+              <span className="font-medium text-white">
                 Loi sur la protection des renseignements personnels dans le
                 secteur privé
               </span>{" "}
               (LPRPSP, L.R.Q., c. P-39.1) du Québec et à la{" "}
-              <span className="font-medium text-blue-dark">Loi 25</span>{" "}
+              <span className="font-medium text-white">Loi 25</span>{" "}
               (Loi modernisant des dispositions législatives en matière de
               protection des renseignements personnels).
             </p>
@@ -43,11 +43,11 @@ export default function PolitiqueConfidentialite() {
 
           {/* Responsable */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Responsable de la protection des renseignements personnels
             </h2>
-            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
-              <p className="font-semibold text-blue-dark">
+            <div className="rounded-xl border border-white/5 bg-blue-dark p-6">
+              <p className="font-semibold text-white">
                 Sébastien Bélisle
               </p>
               <p className="mt-1">Kodra Conseil, SENC</p>
@@ -65,15 +65,15 @@ export default function PolitiqueConfidentialite() {
 
           {/* Renseignements collectés */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Renseignements collectés
             </h2>
             <p className="mb-3">
               Nous recueillons uniquement les renseignements que vous nous
               fournissez volontairement. Plus précisément :
             </p>
-            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
-              <p className="mb-2 font-medium text-blue-dark">
+            <div className="rounded-xl border border-white/5 bg-blue-dark p-6">
+              <p className="mb-2 font-medium text-white">
                 Adresse courriel
               </p>
               <p>
@@ -86,7 +86,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Finalités */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Finalités de la collecte
             </h2>
             <p className="mb-3">
@@ -118,7 +118,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Consentement */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Consentement
             </h2>
             <p>
@@ -141,7 +141,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Conservation */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Conservation des renseignements
             </h2>
             <p>
@@ -155,7 +155,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Partage et sous-traitants */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Partage avec des tiers
             </h2>
             <p className="mb-3">
@@ -164,15 +164,15 @@ export default function PolitiqueConfidentialite() {
               suivants, nécessaires au fonctionnement du site :
             </p>
             <div className="space-y-3">
-              <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                <p className="font-medium text-blue-dark">Loops</p>
+              <div className="rounded-xl border border-white/5 bg-blue-dark p-4">
+                <p className="font-medium text-white">Loops</p>
                 <p className="mt-1 text-sm">
                   Service d&apos;envoi de courriels. Vos données peuvent être
                   hébergées aux États-Unis.
                 </p>
               </div>
-              <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                <p className="font-medium text-blue-dark">Vercel Inc.</p>
+              <div className="rounded-xl border border-white/5 bg-blue-dark p-4">
+                <p className="font-medium text-white">Vercel Inc.</p>
                 <p className="mt-1 text-sm">
                   Hébergement du site web. Les données transitent par des
                   serveurs situés aux États-Unis.
@@ -189,7 +189,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Droits */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Vos droits
             </h2>
             <p className="mb-3">
@@ -200,7 +200,7 @@ export default function PolitiqueConfidentialite() {
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange-brand" />
                 <p>
-                  <span className="font-medium text-blue-dark">
+                  <span className="font-medium text-white">
                     Droit d&apos;accès :
                   </span>{" "}
                   vous pouvez demander quels renseignements nous détenons à votre
@@ -210,7 +210,7 @@ export default function PolitiqueConfidentialite() {
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange-brand" />
                 <p>
-                  <span className="font-medium text-blue-dark">
+                  <span className="font-medium text-white">
                     Droit de rectification :
                   </span>{" "}
                   vous pouvez demander la correction de renseignements inexacts.
@@ -219,7 +219,7 @@ export default function PolitiqueConfidentialite() {
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange-brand" />
                 <p>
-                  <span className="font-medium text-blue-dark">
+                  <span className="font-medium text-white">
                     Droit de suppression :
                   </span>{" "}
                   vous pouvez demander la suppression de vos renseignements
@@ -229,7 +229,7 @@ export default function PolitiqueConfidentialite() {
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange-brand" />
                 <p>
-                  <span className="font-medium text-blue-dark">
+                  <span className="font-medium text-white">
                     Droit de retrait du consentement :
                   </span>{" "}
                   vous pouvez retirer votre consentement en tout temps.
@@ -250,7 +250,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Sécurité */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Sécurité
             </h2>
             <p>
@@ -264,7 +264,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Témoins (cookies) */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Témoins de connexion (cookies)
             </h2>
             <p>
@@ -277,7 +277,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Modifications */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Modifications de la politique
             </h2>
             <p>
@@ -290,7 +290,7 @@ export default function PolitiqueConfidentialite() {
 
           {/* Plainte */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Plainte
             </h2>
             <p>
@@ -315,7 +315,7 @@ export default function PolitiqueConfidentialite() {
           </p>
         </article>
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }

@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteNavbar from "@/components/SiteNavbar";
+import SiteFooter from "@/components/SiteFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,27 +11,27 @@ export const metadata: Metadata = {
 export default function MentionsLegales() {
   return (
     <>
-      <Navbar />
-      <main className="bg-white px-6 py-24">
-        <article className="mx-auto max-w-3xl text-gray-700 leading-relaxed">
-          <h1 className="mb-12 text-3xl font-bold text-blue-dark sm:text-4xl">
+      <SiteNavbar />
+      <main className="bg-blue-dark-light px-6 py-24">
+        <article className="mx-auto max-w-3xl text-gray-300 leading-relaxed">
+          <h1 className="mb-12 text-3xl font-bold text-white sm:text-4xl">
             Mentions légales
           </h1>
 
           {/* Éditeur du site */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Éditeur du site
             </h2>
             <p className="mb-2">
               Le site{" "}
-              <span className="font-medium text-blue-dark">
+              <span className="font-medium text-white">
                 kodra.ca
               </span>{" "}
               est édité par :
             </p>
-            <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-6">
-              <p className="font-semibold text-blue-dark">
+            <div className="mt-4 rounded-xl border border-white/5 bg-blue-dark p-6">
+              <p className="font-semibold text-white">
                 Kodra Conseil, SENC
               </p>
               <p className="mt-1">
@@ -58,7 +58,7 @@ export default function MentionsLegales() {
 
           {/* Associés */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Associés
             </h2>
             <p>
@@ -69,12 +69,12 @@ export default function MentionsLegales() {
 
           {/* Hébergement */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Hébergement
             </h2>
             <p>Le site est hébergé par :</p>
-            <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-6">
-              <p className="font-semibold text-blue-dark">Vercel Inc.</p>
+            <div className="mt-4 rounded-xl border border-white/5 bg-blue-dark p-6">
+              <p className="font-semibold text-white">Vercel Inc.</p>
               <p className="mt-1">440 N Baxter St, Suite 4060</p>
               <p>Coos Bay, OR 97420</p>
               <p>États-Unis</p>
@@ -93,7 +93,7 @@ export default function MentionsLegales() {
 
           {/* Propriété intellectuelle */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Propriété intellectuelle
             </h2>
             <p className="mb-3">
@@ -112,7 +112,7 @@ export default function MentionsLegales() {
 
           {/* Limitation de responsabilité */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Limitation de responsabilité
             </h2>
             <p className="mb-3">
@@ -131,7 +131,7 @@ export default function MentionsLegales() {
 
           {/* Liens hypertextes */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Liens hypertextes
             </h2>
             <p>
@@ -144,7 +144,7 @@ export default function MentionsLegales() {
 
           {/* Droit applicable */}
           <section className="mb-10">
-            <h2 className="mb-4 text-xl font-semibold text-blue-dark">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Droit applicable
             </h2>
             <p>
@@ -161,7 +161,7 @@ export default function MentionsLegales() {
           </p>
         </article>
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }
