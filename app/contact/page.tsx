@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Contact | Kodra Conseil",
   description:
     "Contactez Kodra Conseil pour discuter de vos besoins en facilitation stratégique ou en formation IA. Appel découverte gratuit de 30 minutes.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact | Kodra Conseil",
+    description:
+      "Contactez Kodra Conseil pour discuter de vos besoins en facilitation stratégique ou en formation IA. Appel découverte gratuit de 30 minutes.",
+  },
 };
 
 export default function Contact() {

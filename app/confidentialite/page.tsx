@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Politique de confidentialité — Kodra Conseil",
   description:
     "Politique de confidentialité et protection des renseignements personnels — Kodra Conseil, SENC.",
+  alternates: { canonical: "/confidentialite" },
+  openGraph: {
+    title: "Politique de confidentialité — Kodra Conseil",
+    description:
+      "Politique de confidentialité et protection des renseignements personnels — Kodra Conseil, SENC.",
+  },
 };
 
 export default function PolitiqueConfidentialite() {

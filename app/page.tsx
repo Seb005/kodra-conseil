@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CountUp from "@/components/CountUp";
 import MurmurationBg from "@/components/MurmurationBg";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Kodra Conseil | Facilitation stratégique et formations IA — Abitibi-Témiscamingue",
+    description:
+      "Kodra accompagne les organisations en facilitation stratégique et formations en intelligence artificielle. Basé en Abitibi-Témiscamingue, Québec. Plus de 1 000 personnes formées.",
+  },
+};
 
 const stats = [
   { value: 1000, prefix: "+", suffix: "", label: "personnes formées", sub: "en IA depuis 2024" },

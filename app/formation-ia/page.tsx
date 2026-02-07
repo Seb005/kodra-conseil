@@ -1,5 +1,6 @@
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -8,6 +9,12 @@ export const metadata: Metadata = {
     "Formation en ligne — Maîtriser l'IA générative | Kodra Conseil",
   description:
     "Plus de 4 heures de formation asynchrone pour comprendre l'IA, maîtriser les LLMs et utiliser l'IA générative de façon professionnelle, efficace et éthique.",
+  alternates: { canonical: "/formation-ia" },
+  openGraph: {
+    title: "Formation en ligne — Maîtriser l'IA générative | Kodra Conseil",
+    description:
+      "Plus de 4 heures de formation asynchrone pour comprendre l'IA, maîtriser les LLMs et utiliser l'IA générative de façon professionnelle, efficace et éthique.",
+  },
 };
 
 const modules = [
@@ -118,6 +125,38 @@ const audiences = [
 export default function FormationIA() {
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Qu'est-ce que la formation en IA générative de Kodra ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "C'est une formation asynchrone de plus de 4 heures qui couvre les fondamentaux de l'IA, les modèles de langage (LLMs), l'art du prompting et les applications concrètes de l'IA générative en contexte professionnel. Accessible en ligne, à votre rythme.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "À qui s'adresse la formation IA de Kodra Conseil ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "La formation s'adresse aux professionnels, gestionnaires et équipes qui veulent comprendre et utiliser l'IA générative de façon efficace et éthique dans leur travail quotidien. Aucun prérequis technique n'est nécessaire.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "La formation en IA est-elle disponible en entreprise ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui, Kodra offre des formations IA sur mesure pour les organisations, en présentiel ou en ligne. Les contenus sont adaptés au secteur d'activité et aux besoins spécifiques de l'équipe.",
+              },
+            },
+          ],
+        }}
+      />
       <SiteNavbar />
 
       {/* ======== HERO ======== */}

@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Nos outils et cadres de travail | Kodra Conseil",
   description:
     "Découvrez les cadres, modèles et méthodologies utilisés par Kodra en facilitation stratégique et formations IA : Design Thinking, Design Sprint, Liberating Structures et plus.",
+  alternates: { canonical: "/outils" },
+  openGraph: {
+    title: "Nos outils et cadres de travail | Kodra Conseil",
+    description:
+      "Découvrez les cadres, modèles et méthodologies utilisés par Kodra en facilitation stratégique et formations IA : Design Thinking, Design Sprint, Liberating Structures et plus.",
+  },
 };
 
 const outils = [

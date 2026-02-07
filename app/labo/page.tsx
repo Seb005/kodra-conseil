@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Labo — Kodra Conseil",
   description:
     "Le laboratoire de Kodra Conseil. Projets web, prototypes et expérimentations.",
+  alternates: { canonical: "/labo" },
+  openGraph: {
+    title: "Labo — Kodra Conseil",
+    description:
+      "Le laboratoire de Kodra Conseil. Projets web, prototypes et expérimentations.",
+  },
 };
 
 const projects = [

@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "À propos | L'équipe Kodra Conseil",
   description:
     "25 ans d'expérience en gestion et leadership. Plus de 1 000 personnes formées en IA. Découvrez l'équipe derrière Kodra Conseil.",
+  alternates: { canonical: "/a-propos" },
+  openGraph: {
+    title: "À propos | L'équipe Kodra Conseil",
+    description:
+      "25 ans d'expérience en gestion et leadership. Plus de 1 000 personnes formées en IA. Découvrez l'équipe derrière Kodra Conseil.",
+  },
 };
 
 export default function APropos() {

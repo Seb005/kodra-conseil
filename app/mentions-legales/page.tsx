@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Mentions légales — Kodra Conseil",
   description:
     "Mentions légales du site kodra.ca — Kodra Conseil, SENC.",
+  alternates: { canonical: "/mentions-legales" },
+  openGraph: {
+    title: "Mentions légales — Kodra Conseil",
+    description:
+      "Mentions légales du site kodra.ca — Kodra Conseil, SENC.",
+  },
 };
 
 export default function MentionsLegales() {

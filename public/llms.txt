@@ -1,0 +1,28 @@
+# Kodra Conseil
+
+> Kodra Conseil est une firme de facilitation stratégique et de formation en intelligence artificielle basée en Abitibi-Témiscamingue, Québec, Canada. Fondée par Sébastien Bélisle, Kodra accompagne les organisations dans leurs réflexions stratégiques, leur adoption de l'IA et le développement de leur intelligence collective. Plus de 1 000 personnes formées.
+
+## Services
+
+- [Facilitation stratégique](https://kodra.ca/services): Ateliers de facilitation stratégique pour organisations et équipes de direction. Accompagnement dans les processus de réflexion et de prise de décision collective.
+- [Formation en intelligence artificielle](https://kodra.ca/formation-ia): Programmes de formation IA adaptés pour aider les organisations à comprendre et intégrer l'IA générative dans leurs pratiques. Formations sur mesure, ateliers pratiques.
+- [Intelligence collective](https://kodra.ca/intelligence-collective): Méthodologies et outils pour mobiliser l'intelligence collective des équipes. Techniques de brainstorming, prise de décision collaborative, ateliers de co-création.
+- [Outils et guides](https://kodra.ca/outils): Ressources gratuites et cadres de travail pour améliorer la collaboration et la prise de décision en groupe.
+
+## À propos
+
+- [À propos de Kodra](https://kodra.ca/a-propos): L'équipe, l'approche et les valeurs de Kodra Conseil.
+- [Contact](https://kodra.ca/contact): Formulaire de contact et coordonnées. Courriel: seb@kodra.ca. Basé à La Sarre, Abitibi-Témiscamingue, Québec.
+- [Labo](https://labo.kodra.ca): Projets web, prototypes et expérimentations de Kodra.
+
+## Ressources
+
+- [Guide gratuit — Intelligence collective](https://kodra.ca/guide): Guide PDF gratuit avec 5 leviers concrets pour mobiliser l'intelligence collective de votre équipe.
+
+## Informations
+
+- Localisation: La Sarre, Abitibi-Témiscamingue, Québec, Canada
+- Site web: https://kodra.ca
+- Courriel: seb@kodra.ca
+- LinkedIn: https://www.linkedin.com/in/sbelisle/
+- Infolettre: https://kodraconseil.substack.com

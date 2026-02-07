@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Services | Facilitation stratégique et formations IA — Kodra Conseil",
   description:
     "Planification stratégique, Design Sprint, alignement d'équipe, formations IA en entreprise. Des services sur mesure pour les organisations qui veulent travailler mieux ensemble.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Services | Facilitation stratégique et formations IA — Kodra Conseil",
+    description:
+      "Planification stratégique, Design Sprint, alignement d'équipe, formations IA en entreprise. Des services sur mesure pour les organisations qui veulent travailler mieux ensemble.",
+  },
 };
 
 const facilitationServices = [
@@ -93,6 +100,38 @@ const themes = [
 export default function Services() {
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Qu'est-ce que la facilitation stratégique ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "La facilitation stratégique est un processus structuré qui aide les organisations à aligner leur vision, prendre des décisions collectives et élaborer des plans d'action concrets à travers des ateliers collaboratifs animés par un facilitateur professionnel.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Quels types d'ateliers propose Kodra Conseil ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Kodra propose des ateliers de planification stratégique, d'alignement d'équipe, de Design Sprint, de résolution de problèmes complexes et de formation en intelligence artificielle. Chaque atelier est adapté aux besoins spécifiques de l'organisation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Comment la formation en IA peut-elle aider mon organisation ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "La formation en IA permet aux équipes de comprendre et d'adopter les outils d'intelligence artificielle pertinents à leur secteur, augmentant la productivité et la compétitivité. Plus de 1 000 personnes ont été formées par Kodra Conseil.",
+              },
+            },
+          ],
+        }}
+      />
       <SiteNavbar />
 
       {/* Header */}
