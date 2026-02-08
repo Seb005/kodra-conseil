@@ -4,14 +4,12 @@ import SiteFooter from "@/components/SiteFooter";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Services | Facilitation stratégique et formations IA — Kodra Conseil",
+  title: "Services — Facilitation stratégique et formations IA",
   description:
     "Planification stratégique, Design Sprint, alignement d'équipe, formations IA en entreprise. Des services sur mesure pour les organisations qui veulent travailler mieux ensemble.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Services | Facilitation stratégique et formations IA — Kodra Conseil",
-    description:
-      "Planification stratégique, Design Sprint, alignement d'équipe, formations IA en entreprise. Des services sur mesure pour les organisations qui veulent travailler mieux ensemble.",
+    url: "https://kodra.ca/services",
   },
 };
 

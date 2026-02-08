@@ -3,14 +3,12 @@ import SiteFooter from "@/components/SiteFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions légales — Kodra Conseil",
+  title: "Mentions légales",
   description:
     "Mentions légales du site kodra.ca — Kodra Conseil, SENC.",
   alternates: { canonical: "/mentions-legales" },
   openGraph: {
-    title: "Mentions légales — Kodra Conseil",
-    description:
-      "Mentions légales du site kodra.ca — Kodra Conseil, SENC.",
+    url: "https://kodra.ca/mentions-legales",
   },
 };
 

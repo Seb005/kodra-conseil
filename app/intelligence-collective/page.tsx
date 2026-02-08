@@ -8,14 +8,12 @@ import JsonLd from "@/components/JsonLd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mobilisez l'intelligence collective — Kodra Conseil",
+  title: "Mobilisez l'intelligence collective",
   description:
     "Kodra Conseil accompagne les dirigeants pour transformer leur vision en résultats concrets. Stratégie, transformation digitale, performance opérationnelle.",
   alternates: { canonical: "/intelligence-collective" },
   openGraph: {
-    title: "Mobilisez l'intelligence collective — Kodra Conseil",
-    description:
-      "Kodra Conseil accompagne les dirigeants pour transformer leur vision en résultats concrets. Stratégie, transformation digitale, performance opérationnelle.",
+    url: "https://kodra.ca/intelligence-collective",
   },
 };
 

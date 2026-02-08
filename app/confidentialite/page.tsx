@@ -3,14 +3,12 @@ import SiteFooter from "@/components/SiteFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — Kodra Conseil",
+  title: "Politique de confidentialité",
   description:
     "Politique de confidentialité et protection des renseignements personnels — Kodra Conseil, SENC.",
   alternates: { canonical: "/confidentialite" },
   openGraph: {
-    title: "Politique de confidentialité — Kodra Conseil",
-    description:
-      "Politique de confidentialité et protection des renseignements personnels — Kodra Conseil, SENC.",
+    url: "https://kodra.ca/confidentialite",
   },
 };
 

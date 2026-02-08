@@ -7,11 +7,12 @@ import CountUp from "@/components/CountUp";
 import MurmurationBg from "@/components/MurmurationBg";
 
 export const metadata: Metadata = {
+  title: {
+    absolute: "Kodra Conseil | Facilitation stratégique et formations IA — Abitibi-Témiscamingue",
+  },
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Kodra Conseil | Facilitation stratégique et formations IA — Abitibi-Témiscamingue",
-    description:
-      "Kodra accompagne les organisations en facilitation stratégique et formations en intelligence artificielle. Basé en Abitibi-Témiscamingue, Québec. Plus de 1 000 personnes formées.",
+    url: "https://kodra.ca",
   },
 };
 

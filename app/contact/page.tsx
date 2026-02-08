@@ -4,14 +4,12 @@ import ContactFormDark from "@/components/ContactFormDark";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Kodra Conseil",
+  title: "Contact",
   description:
     "Contactez Kodra Conseil pour discuter de vos besoins en facilitation stratégique ou en formation IA. Appel découverte gratuit de 30 minutes.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact | Kodra Conseil",
-    description:
-      "Contactez Kodra Conseil pour discuter de vos besoins en facilitation stratégique ou en formation IA. Appel découverte gratuit de 30 minutes.",
+    url: "https://kodra.ca/contact",
   },
 };
 

@@ -37,3 +37,12 @@ html {
 .animate-fade-in-up-delay-3 {
   animation: fade-in-up 0.6s ease-out 0.3s both;
 }
+
+@keyframes chat-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
+}
+
+.animate-chat-pulse {
+  animation: chat-pulse 2s ease-in-out 3;
+}

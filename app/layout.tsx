@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,8 +18,25 @@ const defaultDescription =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: defaultTitle,
+  title: {
+    default: defaultTitle,
+    template: "%s | Kodra Conseil",
+  },
   description: defaultDescription,
+  keywords: [
+    "facilitation stratégique",
+    "formation IA",
+    "intelligence artificielle",
+    "intelligence collective",
+    "Design Sprint",
+    "planification stratégique",
+    "Abitibi-Témiscamingue",
+    "Québec",
+    "Kodra Conseil",
+  ],
+  authors: [{ name: "Sébastien Bélisle", url: "https://www.linkedin.com/in/sbelisle/" }],
+  creator: "Kodra Conseil",
+  publisher: "Kodra Conseil",
   openGraph: {
     type: "website",
     locale: "fr_CA",
@@ -26,20 +44,11 @@ export const metadata: Metadata = {
     siteName,
     title: defaultTitle,
     description: defaultDescription,
-    images: [
-      {
-        url: "/og_image.png",
-        width: 1200,
-        height: 630,
-        alt: "Kodra Conseil — Facilitation stratégique et formations IA",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: defaultTitle,
-    description: defaultDescription,
-    images: ["/og_image.png"],
+    creator: "@sabordeleau",
+    site: "@kodraconseil",
   },
   alternates: {
     canonical: siteUrl,
@@ -76,7 +85,7 @@ export default function RootLayout({
             name: "Kodra Conseil",
             url: "https://kodra.ca",
             logo: "https://kodra.ca/logo.png",
-            image: "https://kodra.ca/og_image.png",
+            image: "https://kodra.ca/opengraph-image",
             description: defaultDescription,
             email: "seb@kodra.ca",
             address: {
@@ -112,6 +121,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <ChatWidget />
       </body>
     </html>
   );

@@ -4,14 +4,12 @@ import BlueprintBg from "@/components/BlueprintBg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Labo — Kodra Conseil",
+  title: "Labo",
   description:
     "Le laboratoire de Kodra Conseil. Projets web, prototypes et expérimentations.",
   alternates: { canonical: "/labo" },
   openGraph: {
-    title: "Labo — Kodra Conseil",
-    description:
-      "Le laboratoire de Kodra Conseil. Projets web, prototypes et expérimentations.",
+    url: "https://kodra.ca/labo",
   },
 };
 

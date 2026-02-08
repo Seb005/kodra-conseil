@@ -4,14 +4,12 @@ import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Nos outils et cadres de travail | Kodra Conseil",
+  title: "Nos outils et cadres de travail",
   description:
     "Découvrez les cadres, modèles et méthodologies utilisés par Kodra en facilitation stratégique et formations IA : Design Thinking, Design Sprint, Liberating Structures et plus.",
   alternates: { canonical: "/outils" },
   openGraph: {
-    title: "Nos outils et cadres de travail | Kodra Conseil",
-    description:
-      "Découvrez les cadres, modèles et méthodologies utilisés par Kodra en facilitation stratégique et formations IA : Design Thinking, Design Sprint, Liberating Structures et plus.",
+    url: "https://kodra.ca/outils",
   },
 };
 

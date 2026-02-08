@@ -5,15 +5,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Formation en ligne — Maîtriser l'IA générative | Kodra Conseil",
+  title: "Formation en ligne — Maîtriser l'IA générative",
   description:
     "Plus de 4 heures de formation asynchrone pour comprendre l'IA, maîtriser les LLMs et utiliser l'IA générative de façon professionnelle, efficace et éthique.",
   alternates: { canonical: "/formation-ia" },
   openGraph: {
-    title: "Formation en ligne — Maîtriser l'IA générative | Kodra Conseil",
-    description:
-      "Plus de 4 heures de formation asynchrone pour comprendre l'IA, maîtriser les LLMs et utiliser l'IA générative de façon professionnelle, efficace et éthique.",
+    url: "https://kodra.ca/formation-ia",
   },
 };
 
