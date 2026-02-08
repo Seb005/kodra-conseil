@@ -6,12 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const links = [
-  { href: "/", label: "Accueil" },
   { href: "/services", label: "Services" },
-  { href: "/formation-ia", label: "Formation IA" },
+  { href: "/formation-ia", label: "Formation IA", highlight: true },
   { href: "/outils", label: "Outils" },
-  { href: "/a-propos", label: "À propos" },
-  { href: "https://kodraconseil.substack.com", label: "Réflexions", external: true },
+  { href: "https://kodraconseil.substack.com", label: "Substack", external: true },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -23,11 +21,13 @@ export default function SiteNavbar() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  const linkClass = (href: string) =>
+  const linkClass = (href: string, highlight?: boolean) =>
     `text-sm transition-colors ${
       isActive(href)
-        ? "text-orange-brand font-medium"
-        : "text-gray-400 hover:text-white"
+        ? "text-orange-brand font-semibold"
+        : highlight
+          ? "text-white font-semibold hover:text-orange-brand"
+          : "text-gray-400 hover:text-white"
     }`;
 
   // Scroll detection
@@ -72,7 +72,7 @@ export default function SiteNavbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={linkClass(link.href)}
+                className={linkClass(link.href, link.highlight)}
               >
                 {link.label}
               </a>
@@ -80,7 +80,7 @@ export default function SiteNavbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={linkClass(link.href)}
+                className={linkClass(link.href, link.highlight)}
               >
                 {link.label}
               </Link>
@@ -130,7 +130,7 @@ export default function SiteNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
-                  className={linkClass(link.href)}
+                  className={linkClass(link.href, link.highlight)}
                 >
                   {link.label}
                 </a>
@@ -139,7 +139,7 @@ export default function SiteNavbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={linkClass(link.href)}
+                  className={linkClass(link.href, link.highlight)}
                 >
                   {link.label}
                 </Link>
