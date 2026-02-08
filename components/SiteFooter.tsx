@@ -14,7 +14,14 @@ export default function SiteFooter() {
               alt="Kodra Conseil"
               width={120}
               height={40}
-              className="mb-4 h-7 w-auto opacity-80"
+              className="logo-dark mb-4 h-7 w-auto opacity-80"
+            />
+            <Image
+              src="/logo-dark.png"
+              alt="Kodra Conseil"
+              width={120}
+              height={40}
+              className="logo-light mb-4 hidden h-7 w-auto opacity-80"
             />
             <p className="text-sm leading-relaxed text-gray-500">
               Facilitation stratégique et formations en IA — Abitibi-Témiscamingue, Québec

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { href: "/services", label: "Services" },
@@ -58,7 +59,15 @@ export default function SiteNavbar() {
             alt="Kodra Conseil"
             width={120}
             height={40}
-            className="h-8 w-auto"
+            className="logo-dark h-8 w-auto"
+            priority
+          />
+          <Image
+            src="/logo-dark.png"
+            alt="Kodra Conseil"
+            width={120}
+            height={40}
+            className="logo-light hidden h-8 w-auto"
             priority
           />
         </Link>
@@ -86,6 +95,7 @@ export default function SiteNavbar() {
               </Link>
             )
           )}
+          <ThemeToggle />
           <a
             href="https://www.calendly.com/sbelisle/30"
             target="_blank"
@@ -145,6 +155,10 @@ export default function SiteNavbar() {
                 </Link>
               )
             )}
+            <div className="flex items-center gap-3 pt-2">
+              <ThemeToggle />
+              <span className="text-sm text-gray-400">Thème</span>
+            </div>
             <a
               href="https://www.calendly.com/sbelisle/30"
               target="_blank"

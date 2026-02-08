@@ -46,3 +46,40 @@ html {
 .animate-chat-pulse {
   animation: chat-pulse 2s ease-in-out 3;
 }
+
+/* ===== Light mode ===== */
+
+/* Remap custom theme colors */
+html.light {
+  --color-blue-dark: #ffffff;
+  --color-blue-dark-light: #f3f4f6;
+}
+
+/* Text color overrides */
+html.light .text-white { color: #0B1529; }
+html.light .text-gray-300 { color: #374151; }
+html.light .text-gray-400 { color: #4B5563; }
+html.light .text-gray-500 { color: #6B7280; }
+html.light .text-gray-600 { color: #9CA3AF; }
+html.light body { color: #0B1529; }
+
+/* Preserve white text on colored backgrounds (orange buttons, etc.) */
+html.light .bg-orange-brand,
+html.light .bg-orange-brand-hover,
+html.light .bg-orange-brand *,
+html.light .bg-orange-brand-hover * { color: #ffffff; }
+
+/* Border overrides */
+html.light [class*="border-white\/"] { border-color: rgb(11 21 41 / 0.1); }
+html.light [class*="border-white/"] { border-color: rgb(11 21 41 / 0.1); }
+
+/* Background overrides */
+html.light [class*="bg-white\/"] { background-color: rgb(11 21 41 / 0.04); }
+html.light [class*="bg-white/"] { background-color: rgb(11 21 41 / 0.04); }
+
+/* Form placeholders */
+html.light .placeholder-gray-500::placeholder { color: #9CA3AF; }
+
+/* Logo switching */
+html.light .logo-dark { display: none; }
+html.light .logo-light { display: block; }

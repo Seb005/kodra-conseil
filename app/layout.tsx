@@ -65,6 +65,11 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light')}catch(e){}})()`,
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RE43BML4L2"
           strategy="afterInteractive"
