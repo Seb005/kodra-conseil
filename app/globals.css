@@ -83,3 +83,6 @@ html.light .placeholder-gray-500::placeholder { color: #9CA3AF; }
 /* Logo switching */
 html.light .logo-dark { display: none; }
 html.light .logo-light { display: block; }
+
+/* Invert white client logos on light backgrounds */
+html.light img[src^="/clients/"] { filter: invert(1); }
