@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,10 +16,41 @@ const links = [
 ];
 
 export default function SiteNavbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+  const linkClass = (href: string) =>
+    `text-sm transition-colors ${
+      isActive(href)
+        ? "text-orange-brand font-medium"
+        : "text-gray-400 hover:text-white"
+    }`;
+
+  // Scroll detection
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/5 bg-blue-dark/95 backdrop-blur-md">
+    <nav
+      className={`sticky top-0 z-50 backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300 ${
+        scrolled
+          ? "bg-blue-dark/98 border-b border-white/10 shadow-lg shadow-black/20"
+          : "bg-blue-dark/95 border-b border-white/5"
+      }`}
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/">
           <Image
@@ -40,7 +72,7 @@ export default function SiteNavbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-gray-400 transition-colors hover:text-white"
+                className={linkClass(link.href)}
               >
                 {link.label}
               </a>
@@ -48,7 +80,7 @@ export default function SiteNavbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-gray-400 transition-colors hover:text-white"
+                className={linkClass(link.href)}
               >
                 {link.label}
               </Link>
@@ -80,9 +112,15 @@ export default function SiteNavbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {open && (
-        <div className="border-t border-white/5 bg-blue-dark px-6 py-4 md:hidden">
+      {/* Mobile menu — always in DOM, animated */}
+      <div
+        className={`overflow-hidden border-t bg-blue-dark transition-[max-height,opacity] duration-300 ease-in-out md:hidden ${
+          open
+            ? "max-h-[500px] opacity-100 border-white/5"
+            : "max-h-0 opacity-0 border-transparent"
+        }`}
+      >
+        <div className="px-6 py-4">
           <div className="flex flex-col gap-4">
             {links.map((link) =>
               link.external ? (
@@ -92,7 +130,7 @@ export default function SiteNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
-                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                  className={linkClass(link.href)}
                 >
                   {link.label}
                 </a>
@@ -101,7 +139,7 @@ export default function SiteNavbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                  className={linkClass(link.href)}
                 >
                   {link.label}
                 </Link>
@@ -118,7 +156,7 @@ export default function SiteNavbar() {
             </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

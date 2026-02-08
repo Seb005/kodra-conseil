@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
 import ChatWidget from "@/components/ChatWidget";
+import ScrollToTop from "@/components/ScrollToTop";
+import NavigationProgress from "@/components/NavigationProgress";
 import "./globals.css";
 
 const inter = Inter({
@@ -77,6 +79,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-sans antialiased bg-blue-dark text-white">
+        <NavigationProgress />
         <JsonLd
           data={{
             "@context": "https://schema.org",
@@ -121,6 +124,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <ScrollToTop />
         <ChatWidget />
       </body>
     </html>
