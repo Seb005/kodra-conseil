@@ -41,23 +41,6 @@ const approach = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: "L'atelier de planification stratégique animé par Sébastien a transformé notre façon de travailler. En deux jours, on avait un plan clair et l'adhésion de toute l'équipe.",
-    name: "Témoignage à venir",
-    title: "Client facilitation",
-  },
-  {
-    quote: "La formation en IA a été une révélation pour notre équipe. Concrète, pratique, directement applicable. On a gagné des heures chaque semaine.",
-    name: "Témoignage à venir",
-    title: "Client formation IA",
-  },
-  {
-    quote: "Ce qui distingue Kodra, c'est la capacité à créer un espace où tout le monde contribue réellement. Les résultats parlent d'eux-mêmes.",
-    name: "Témoignage à venir",
-    title: "Client planification stratégique",
-  },
-];
 
 export default function Home() {
   return (
@@ -553,31 +536,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ======== TÉMOIGNAGES ======== */}
-      <section className="bg-blue-dark px-6 py-24">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-center text-3xl font-bold tracking-tight text-white md:text-4xl">
-            Ce qu&apos;ils en disent
-          </h2>
-          <div className="mt-16 grid gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="rounded-2xl border border-white/5 bg-blue-dark-light p-8"
-              >
-                <span className="text-5xl font-bold leading-none text-orange-brand/30">&ldquo;</span>
-                <p className="mt-2 leading-relaxed text-gray-300">
-                  {t.quote}
-                </p>
-                <div className="mt-6 border-t border-white/5 pt-4">
-                  <p className="text-sm font-semibold text-white">{t.name}</p>
-                  <p className="text-xs text-gray-500">{t.title}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ======== QUI SOMMES-NOUS (aperçu) ======== */}
       <section className="bg-blue-dark-light px-6 py-24">
