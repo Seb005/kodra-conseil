@@ -22,6 +22,14 @@ const projects = [
     status: "live" as const,
     tags: ["Next.js", "Landing page", "Loops"],
   },
+  {
+    slug: "https://labo-kodra.vercel.app",
+    title: "Gestion des achats",
+    description:
+      "Système d'analyse de factures PDF par IA — extraction automatique et compilation en inventaire Excel.",
+    status: "live" as const,
+    tags: ["Next.js", "Claude API", "ExcelJS"],
+  },
 ];
 
 const statusConfig = {
