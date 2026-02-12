@@ -117,45 +117,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {/* Webinaire CCIAO */}
-            <div className="group relative rounded-2xl border border-orange-brand/20 bg-blue-dark-light p-6 transition-all hover:border-orange-brand/40">
-              <div className="mb-4 flex items-center justify-between">
-                <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-semibold text-green-400">
-                  Gratuit
-                </span>
-                <span className="text-xs text-gray-500">En ligne</span>
-              </div>
-              <h3 className="text-lg font-bold text-white">
-                L&apos;IA en entreprise&nbsp;: ce que vous devez savoir
-              </h3>
-              <p className="mt-2 text-sm text-gray-400">
-                Webinaire pour les membres de la Chambre de commerce d&apos;Abitibi-Ouest (CCIAO).
-              </p>
-              <div className="mt-4 space-y-2 text-sm">
-                <div className="flex items-center gap-2 text-gray-300">
-                  <svg className="h-4 w-4 shrink-0 text-orange-brand" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                  </svg>
-                  11 février 2026 &middot; 12h à 13h
-                </div>
-                <div className="flex items-center gap-2 text-gray-300">
-                  <svg className="h-4 w-4 shrink-0 text-orange-brand" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-                  </svg>
-                  Zoom
-                </div>
-              </div>
-              <a
-                href="https://webinaire-ia.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-lg bg-orange-brand px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange-brand-hover"
-              >
-                S&apos;inscrire gratuitement
-              </a>
-            </div>
-
+          <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
             {/* Initiation IA - UQAT */}
             <div className="group relative rounded-2xl border border-white/5 bg-blue-dark-light p-6 transition-all hover:border-white/10">
               <div className="mb-4 flex items-center justify-between">

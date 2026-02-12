@@ -60,7 +60,6 @@ Sébastien Bélisle — Co-fondateur, facilitateur et formateur en IA
 Agnico Eagle, Desjardins, Cégep Abitibi-Témiscamingue, Ville de La Sarre, UQAT, UPA Abitibi-Témiscamingue, et plus de 50 organisations accompagnées.
 
 ## FORMATIONS À VENIR (Hiver 2026)
-- 11 février 2026 : Webinaire gratuit "L'IA en entreprise : ce que vous devez savoir" (CCIAO, en ligne, 12h à 13h)
 - 26 février et 17 mars 2026 : "Initiation à l'IA : concepts de base et utilisation des LLM" (UQAT, en ligne, 25$ + taxes)
 - 26 mars 2026 : "IA avancée : automatisations, agents et recherche augmentée" (UQAT, en ligne, 25$ + taxes)
 
